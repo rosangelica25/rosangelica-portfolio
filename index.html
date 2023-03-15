@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>RFS Web Developer</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/RFS/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">HOME</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <!--<li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>-->
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/rosangelica-feliz-saldivar-5969381b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/rosangelica25" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Welcome</p>
+                <h2>I'm <span>Rosangelica Feliz</span>, Web Developer</h2>
+                <p class="descripcion">If you want to contact me, write to rosangelica25@outlook.com </p>
+                <a href="#portfolio">Go to Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">About me</p>
+            <h2>Hi, I'm <span>Rosangelica Feliz</span> </h2>
+            <h3>Web Developer</h3>
+            <p>I am a Software Engineering student and I am looking to expand my field of work in the world of web development. I have done some personal projects for my university and programming courses. </p>
+            <p>You can visit my LinkedIn here: <a href="https://www.linkedin.com/in/rosangelica-feliz-saldivar-5969381b6/">LinkedIn</a></p>
+            <a download="CV ROSANGELICA FELIZ 2023" href="CV ROSANGELICA FELIZ 2023.pdf">Download CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MY SERVICES</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Web Design</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I have skills in HTML, CSS, Javascript, React and Node.js </p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Backend development</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I can offer you backend services using PHP and Python.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>UX/UI Design</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>
+                <p>I can make your wireframes using tools like Figma and Adobe XD</p>
+            </div>
+        </div>
+       
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>SKILLS </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Database</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Ilustrator, Figma y Adobe XD</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">PORTFOLIO</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://pag-blog-de-cafe.netlify.app" target="_blank"><img src="img/proyecto1.jpg" alt="Coffee courses blog"></a>
+                <div class="info">
+                    <h4>Coffee courses blog</h4>
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://front-end-tienda.netlify.app/" target="_blank"><img src="img/proyecto2.jpg" alt="T-shirt frontend store"></a>
+                <div class="info">
+                    <h4>T-shirt frontend store</h4>
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://loginnodejs.netlify.app/" target="_blank"><img src="img/proyecto3.jpg" alt="Login made with Node.js"></a>
+                <div class="info">
+                    <h4>Login made with Node.js</h4>
+                    <p>Web Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://ligaacb.netlify.app/" target="_blank"><img src="img/proyecto4.jpg" alt="Page for Basketball League"></a>
+                <div class="info">
+                    <h4>Page for Basketball League</h4>
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://abranks.netlify.app/" target="_blank"><img src="img/proyecto5.jpg" alt="Page to consult sport rankings"></a>
+                <div class="info">
+                    <h4>Page to consult sport rankings</h4>
+                    <p>Web Design</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <a href="https://primerapaginafreelancer1.netlify.app/" target="_blank"><img src="img/proyecto6.jpg" alt="My First Portfolio"></a>
+                <div class="info">
+                    <h4>My First Portfolio</h4>
+                    <p>Web Design</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <div hidden>
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+    </div>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>All rights reserved - 2022</p>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/rosangelica-feliz-saldivar-5969381b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/rosangelica25" target="_blank"><i class="fa-brands fa-github"></i></a>
+            
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
